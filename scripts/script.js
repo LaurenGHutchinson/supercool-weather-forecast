@@ -1,12 +1,12 @@
 // Importing LocationAPI module
-import LocationApi from "./LocationApi.js";
+import LocationApi2 from "./LocationApi2.js";
 import config from './config.js';
 
 // API-KEY
 const myLocationKey = config.WEATHER_KEY;
 const myGoogleKey = config.GOOGLE_KEY;
 
-const locationApi = new LocationApi(myLocationKey);
+const locationApi = new LocationApi2(myLocationKey);
 
 // Gets the Weather Data and display it on the site
 async function getCurrentCondition(locationResponse) {

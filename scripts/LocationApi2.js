@@ -7,7 +7,7 @@
 
 //http://dataservice.accuweather.com/locations/v1/328328?apikey=BvLK0RfGL4q1WDK2maFxGffw0b1L4zkH
 
-class LocationApi {
+class LocationApi2 {
     constructor(apiKey){
         this.apiKey = apiKey;
         this.baseUrl = 'http://dataservice.accuweather.com';
@@ -34,6 +34,6 @@ class LocationApi {
     }
 }
 
-export default LocationApi;
+export default LocationApi2;
 
 //${this.baseUrl}/currentconditions/v1/${locationKey}?apikey=${this.apiKey}
