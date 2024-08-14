@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>SuperCool Forecast</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="logo.png" alt="logo">
+      </div>
+    </header>
+    <main class="forecast">
+
+        <div class="forecast__top">
+      
+        <form class="forecast__form">
+            <label for="forecastInputLocation">Enter your location to find </label>
+        <input type="text" class="forecast__input" name="forecastInputLocation" />
+        <br/>
+        <button class="forecast__submit" type="submit">Search</button>
+        <br/>
+ 
+        <!-- Drop down list -->
+        <select id="selectCountry" class="forecast__drop-down">
+          <option>Choose a Country</option>
+        </select>
+        <!-- <button class="forecast__submit" type="submit">Get Data</button> -->
+        <!-- <input type="text" class="forecast__input" name="forecastInputCountry" /> -->
+        <br />
+
+        <br />
+        <br />
+      </form>
+
+      <div class="forecast__cities">
+        <button class="forecast__city" alt="Dubai">Dubai</button>
+        <button class="forecast__city" alt="London">London</button>
+        <button class="forecast__city" alt="Paris">Paris</button>
+
+        <br/>
+        <br/>
+      </div>
+    </div>
+<div class="forecast__bottom">
+      <div class="forecast__cards">
+
+          <!--Get forecast data-->
+        <section class="forecast__cards--forecast">
+          <div class="forecast__cards--row">
+            <div class="forecast__cards--column">
+              <div class="forecast__cards--card forecast__cards--forecast">
+                <h3>Card 1</h3>
+              </div>
+            </div>
+        </section>
+
+        <!--Satellite image-->
+        <section class="forecast__cards--satellite">
+          <div class="forecast__cards--column">
+            <div class="forecast__cards--card">
+              <h3>Card 2</h3>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>
+
+<!-- <iframe class="forecast__cards--satellite"
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/view?key=<YOUR_API_KEY>&center=<-33.8569,151.2152>&zoom=18&maptype=satellite"allowfullscreen>
+</iframe> -->
+
+<!-- CLASS NAMES -->
+<!--header: header  -->
+<!--logo: header__logo  -->
+
+<!--main tag: forecast  -->
+
+<!--form: forecast__form  -->
+<!--location input (temporarily using text input, in any case the class name would be the same): forecast__input -->
+<!--submit button: forecast__submit  -->
+
+<!--popular cities button wrapper  -->
+<!--popular cities button: forecast__city  -->
+
+<!--div wrapping the "forecast data" and "satellite image": forecast__cards  -->
+<!--forecast data: forecast__cards--forecast  -->
+<!--satellite image: forecast__cards--satellite  -->
+
+<!--individual card: forecast__cards--card  -->
