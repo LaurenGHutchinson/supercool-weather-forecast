@@ -1,11 +1,9 @@
 //link url: ''
-//api_key: 'BvLK0RfGL4q1WDK2maFxGffw0b1L4zkH'
 
 //location-key: /locations/v1/cities/autocomplete
 //current-conditions: /currentconditions/v1/{locationKey}
 //radar images: /imagery/v1/maps/radsat/{resolution}/{locationKey}
 //https://express-proxy-3fa2dcca9dad.herokuapp.com/api?url=http://dataservice.accuweather.com
-//google api-key: AIzaSyDU2-WQo0gxz_6dx0-IUwuC2t1hrkxQw_E
 
 //http://dataservice.accuweather.com/locations/v1/328328?apikey=BvLK0RfGL4q1WDK2maFxGffw0b1L4zkH
 
